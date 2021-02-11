@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #define VENDOR_ID       0x20A0
-#define PRODUCT_ID      0x422D
+#define PRODUCT_ID      0x4D96
 #define DEVICE_VER      0x0200
 #define MANUFACTURER    YMDK
 #define PRODUCT         YMD96
-
+#define DYNAMIC_KEYMAP_LAYER_COUNT 3
 /* matrix size */
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 15
@@ -40,7 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BACKLIGHT_BREATHING
 
 #define TAPPING_TOGGLE 3
-
 #define USB_MAX_POWER_CONSUMPTION 100
 
 /* RGB underglow */
@@ -50,3 +49,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN E2 // NOTE: for PS2AVRGB boards, underglow commands are sent via I2C to 0xB0.
 #define RGBLIGHT_ANIMATIONS
 /*#define RGBLIGHT_VAL_STEP 20*/
+#define BOOTMAGIC_LITE_ROW 6
+#define BOOTMAGIC_LITE_COLUMN 5
